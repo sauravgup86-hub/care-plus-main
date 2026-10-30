@@ -11,7 +11,7 @@ const AdminContextProvider = (props) => {
     const backendUrl = configuredBackendUrl
         ? configuredBackendUrl.replace(/\/+$/, '')
         : import.meta.env.DEV
-            ? 'http://localhost:4000'
+            ? 'https://care-plus-main-backend.onrender.com'
             : ''
 
     const [aToken, setAToken] = useState(localStorage.getItem('aToken') ? localStorage.getItem('aToken') : '')

@@ -11,7 +11,7 @@ const DoctorContextProvider = (props) => {
     const backendUrl = configuredBackendUrl
         ? configuredBackendUrl.replace(/\/+$/, '')
         : import.meta.env.DEV
-            ? 'http://localhost:4000'
+            ? 'https://care-plus-main-backend.onrender.com'
             : ''
 
     const [dToken, setDToken] = useState(localStorage.getItem('dToken') ? localStorage.getItem('dToken') : '')
