@@ -10,7 +10,7 @@ const AppContextProvider = (props) => {
     const backendUrl = configuredBackendUrl
         ? configuredBackendUrl.replace(/\/+$/, '')
         : import.meta.env.DEV
-            ? 'http://localhost:4000'
+            ? 'https://care-plus-main-backend.onrender.com'
             : ''
 
     const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
